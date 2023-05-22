@@ -35,7 +35,8 @@
             <li>other cats</li>
         </ol>
         <figure>
-            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+                 alt="Five cats looking around a field.">
             <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
         </figure>
     </section>
@@ -45,11 +46,22 @@
             <input type="text" name="catphotourl" placeholder="cat photo URL" required>
             <button type="submit">Submit</button>
             <fieldset>
-                <label><input value="indoor" name="indoor-outdoor" type="radio" id="indoor"> Indoor</label>
+                <legend>Is your cat an indoor or outdoor cat?</legend>
+                <label><input checked value="indoor" name="indoor-outdoor" type="radio" id="indoor"> Indoor</label>
                 <label><input value="outdoor" name="indoor-outdoor" type="radio" id="outdoor"> Outdoor</label>
+            </fieldset>
+            <fieldset>
+                <legend>What's your cat's personality?</legend>
+                <input checked type="checkbox" value="loving" name="personality" id="loving"> <label
+                    for="loving">Loving</label>
+                <input type="checkbox" value="lazy" name="personality" id="lazy"> <label for="lazy">Lazy</label>
+                <input type="checkbox" value="energetic" name="personality" id="energetic"> <label for="energetic">Energetic</label>
             </fieldset>
         </form>
     </section>
 </main>
+<footer>
+    <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+</footer>
 </body>
 </html>
